@@ -14,7 +14,6 @@ The tutorial walks you through adding:
 - FusionAuth OAuth configuration
 - Token validation via UserInfo endpoint
 - Custom scopes and consent flow
-- OAuth discovery metadata
 - Client registration
 
 To see the completed implementation:
@@ -89,7 +88,6 @@ You should see:
 
 Now you're ready to add OAuth protection! Follow the tutorial to:
 - Add token validation
-- Configure OAuth discovery
 - Register Claude Desktop as a client
 - Test the protected server
 

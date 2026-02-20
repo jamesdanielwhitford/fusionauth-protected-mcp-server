@@ -8,7 +8,6 @@ logger = logging.getLogger(__name__)
 # Create a basic MCP server without authentication
 mcp = FastMCP(
     name="FusionAuth MCP Server",
-    stateless_http=True,
 )
 
 
@@ -26,5 +25,5 @@ def get_name() -> str:
 if __name__ == "__main__":
     import uvicorn
 
-    mcp_app = mcp.http_app()
+    mcp_app = mcp.http_app(stateless_http=True)
     uvicorn.run(mcp_app, host="0.0.0.0", port=8000)
